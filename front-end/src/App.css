@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#todo{
+    border: 1px solid  white;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    padding: 20px;
+    /* overflow-y: scroll; */
+
+}
+.form{
+    width:100%;
+    height: 100%;
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* padding: 15px; */
+}
+
+#tasks{
+    padding: 10px 25px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.form-input{
+    width: 70%;
+}
+.form-input label{
+    font-size: 32px;
+}
+
+.btn-sub{
+    width: 25%;
+    height: 40%;
+    padding: 15px;
+    display: inline;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: greenyellow;
+    font-weight: 700;
+}
+
+
+#todo .header{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.list{
+    border: 2px solid white;
+    list-style: none;
+    padding-bottom: 15px;
+    overflow-y: scroll;
+    /* scroll-snap-type:  y mandatory; */
+    height: 350px;
+}
+
+.list li{
+    border: 2px solid white;
+    width: 100%;
+    min-height: fit-content;
+    min-width: fit-content;
+    margin-top: 15px;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-around;
+
+}
+
+.list input[type='checkbox']{
+    margin-right:20px;
+}
+.list li label{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.btn-del{
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.task-done{
+    text-decoration: line-through;
+    color: rgb(153,153,153);
+}
